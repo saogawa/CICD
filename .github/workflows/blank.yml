@@ -27,7 +27,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Install containerlab
-      　run: sudo bash -c "$(curl -sL https://get.containerlab.dev)"
+        run: sudo bash -c "$(curl -sL https://get.containerlab.dev)"
 
       - name: Check clab version
-      　run: clab version
+        run: clab version
