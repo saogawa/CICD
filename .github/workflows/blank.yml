@@ -40,6 +40,14 @@ jobs:
 
       - name: Deploy the clab
         run: |
+          pwd
+          ls -alt
+          ls -alt ./CICD
+          ls -alt ./CICD/CICD/
+          tree
+          
+      - name: Deploy the clab
+        run: |
           ls -alt
           sudo clab deploy
           
