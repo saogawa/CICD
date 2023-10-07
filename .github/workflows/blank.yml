@@ -31,3 +31,12 @@ jobs:
 
       - name: Check clab version
         run: clab version
+  
+      - name: Get topology file
+        run: wget https://raw.githubusercontent.com/srl-labs/containerlab/main/lab-examples/srl01/srl01.clab.yml
+
+      - name: Deploy the clab
+        run: |
+          ls -alt
+          clab deploy
+        
