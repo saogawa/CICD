@@ -18,6 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@main
+        
       - name: Run a one-line script
         run: echo Hello, world!
 
