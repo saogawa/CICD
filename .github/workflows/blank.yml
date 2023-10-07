@@ -38,9 +38,6 @@ jobs:
       - name: Get topology file
         run: wget https://raw.githubusercontent.com/srl-labs/containerlab/main/lab-examples/srl02/srl02.clab.yml
 
-      - name: Git clone
-        run: git clone https://github.com/saogawa/CICD.git
-
       - name: Deploy the clab
         run: |
           ls -alt
