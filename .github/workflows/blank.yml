@@ -49,16 +49,17 @@ jobs:
         run: |
           ls -alt
           sudo clab deploy
-          
+          sudo docker ps
+
       - name: Check srl1 version
         run: |
-          sudo docker exec -it clab-srl02-srl1 sr_cli show version
+          sudo docker exec clab-srl02-srl1 sr_cli show version
 
       - name: Check srl2 version
         run: |
-          sudo docker exec -it clab-srl02-srl2 sr_cli show version
+          sudo docker exec clab-srl02-srl2 sr_cli show version
 
       - name: Check LLDP stataus
         run: |
-          sudo docker exec -it clab-srl02-srl1 sr_cli show system lldp neighbor
-          sudo docker exec -it clab-srl02-srl1 sr_cli show system lldp neighbor
+          sudo docker exec clab-srl02-srl1 sr_cli show system lldp neighbor
+          sudo docker exec clab-srl02-srl1 sr_cli show system lldp neighbor
