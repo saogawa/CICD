@@ -52,13 +52,13 @@ jobs:
           
       - name: Check srl1 version
         run: |
-          docker exec -it clab-srl02-srl1 sr_cl show version
+          docker exec -it clab-srl02-srl1 sr_cli show version
 
       - name: Check srl2 version
         run: |
-          docker exec -it clab-srl02-srl2 sr_cl show version
+          docker exec -it clab-srl02-srl2 sr_cli show version
 
       - name: Check LLDP stataus
         run: |
-          docker exec -it clab-srl02-srl1 sr_cl show system lldp neighbor
-          docker exec -it clab-srl02-srl1 sr_cl show system lldp neighbor
+          docker exec -it clab-srl02-srl1 sr_cli show system lldp neighbor
+          docker exec -it clab-srl02-srl1 sr_cli show system lldp neighbor
